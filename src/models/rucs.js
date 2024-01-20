@@ -1,19 +1,19 @@
 const mongoose = require("mongoose");
 
 const rucsSchema = mongoose.Schema({
-  ruc: {
+  RUC: {
     type: "number",
     required: true,
   },
-  razon_social: {
+  RAZON_SOCIAL: {
     type: "string",
     required: true,
   },
-  dv: {
+  DV: {
     type: "string",
     required: true,
   },
-  estado: {
+  ESTADO: {
     type: "string",
     required: true,
   },

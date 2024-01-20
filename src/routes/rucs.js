@@ -3,7 +3,7 @@ const rucsSchema = require("../models/rucs");
 
 const router = express.Router();
 
-//Crear Rucs 
+//Crear rucs
 router.post("/rucs", (req, res) => {
   const rucsRoutes = rucsSchema(req.body);
   rucs
@@ -21,21 +21,24 @@ router.get("/rucs", (req, res) => {
 });
 
 //Consulta un Ruc
-router.get("/rucs/:ruc", (req, res) => {
-  const { ruc } = req.params;
+router.get("/rucs/:RUC", (req, res) => {
+  const { RUC } = req.params;
   rucsSchema
-    .find(ruc)
+    .find({ RUC: RUC })
     .then((data) => res.json(data))
     .catch((error) => res.json({ message: error }));
 });
 
 // Eliminar un Ruc
-router.delete("/rucs/:ruc", (req, res) => {
-  const { ruc } = req.params;
+router.delete("/rucs/:RUC", (req, res) => {
+  const { RUC } = req.params;
   rucsSchema
-    .remove({ ruc: ruc })
+    .remove({ RUC: RUC })
     .then((data) => res.json(data))
     .catch((error) => res.json({ message: error }));
 });
+
+
+
 
 module.exports = router;
