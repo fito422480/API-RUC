@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const rucsSchema = mongoose.Schema({
   RUC: {
-    type: "string",
+    type: "number",
     required: true,
   },
   RAZON_SOCIAL: {
