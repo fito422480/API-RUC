@@ -38,7 +38,4 @@ router.delete("/rucs/:RUC", (req, res) => {
     .catch((error) => res.json({ message: error }));
 });
 
-
-
-
 module.exports = router;

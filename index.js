@@ -2,6 +2,7 @@ const express = require("express");
 require("dotenv").config();
 const mongoose = require("mongoose");
 const rucsRoutes = require("./src/routes/rucs");
+const razonsocialRoutes = require("./src/routes/razonsocial");
 
 const app = express();
 const port = process.env.PORT || 9000;
@@ -9,6 +10,7 @@ const port = process.env.PORT || 9000;
 //Middleware
 app.use(express.json());
 app.use("/api", rucsRoutes);
+app.use("/api", razonsocialRoutes);
 
 //Routes
 app.get("/", (req, res) => {
