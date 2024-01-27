@@ -7,7 +7,7 @@ const router = express.Router();
 router.get("/razonsocial/:RAZON_SOCIAL", (req, res) => {
   const { RAZON_SOCIAL } = req.params;
   rucsSchema
-    .find({ RAZON_SOCIAL: { $regex: RAZON_SOCIAL }})
+    .find({ $text: { $search: RAZON_SOCIAL }})
     .then((data) => res.json(data))
     .catch((error) => res.json({ message: error }));
 });
