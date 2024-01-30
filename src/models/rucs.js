@@ -10,7 +10,7 @@ const rucsSchema = mongoose.Schema({
     required: true,
   },
   DV: {
-    type: "string",
+    type: "number",
     required: true,
   },
   ESTADO: {
