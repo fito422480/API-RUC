@@ -1,4 +1,4 @@
-## API de consulta de RUC!
+## API de consulta de RUCs!
 
 <b> Api creado en NodeJs! </b>
 
