@@ -2,7 +2,7 @@
 
 <b> Api creado en NodeJs! </b>
 
-Esta Api tiene como objetivo la de realizar consultas de rucs y ver en que estado está ese contribuyente
+Esta Api tiene como objetivo la de realizar consultas de rucs y ver en que estado está ese contribuyente, tambien tiene la funcionalidad de mantenimiento de nuevos contribuyentes
 
 <!-- INFORMATION -->
 
