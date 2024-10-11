@@ -14,7 +14,7 @@ app.use("/api", razonsocialRoutes);
 
 //Routes
 app.get("/", (req, res) => {
-  res.send("Welcome to the Jungle!");
+  res.send("Bienvenido a la api de consultas de Rucs!");
 });
 
 //MongoDB conection
