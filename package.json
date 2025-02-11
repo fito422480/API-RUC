@@ -4,7 +4,7 @@
   "description": "Api de Consulta de Rucs",
   "main": "index.js",
   "engines": {
-    "node": "23.x"
+    "node": "22.x"
   },
   "scripts": {
     "start": "nodemon ./index.js"
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
     "api-ruc": "file:",
     "dotenv": "16.4.7",
     "express": "5.0.1",
