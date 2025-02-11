@@ -18,7 +18,7 @@
     "api-ruc": "file:",
     "debug": "^4.4.0",
     "dotenv": "16.4.7",
-    "express": "^4.21.2",
+    "express": "5.0.1",
     "get-intrinsic": "^1.2.7",
     "gopd": "^1.2.0",
     "mime-types": "^2.1.35",
