@@ -6,7 +6,14 @@
       "use": "@vercel/node"
     }
   ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ],
   "env": {
-    "NODE_VERSION": "22.x"
+    "NODE_VERSION": "20.x",
+    "MONGODB_URI": "@mongodb_uri"
   }
 }
