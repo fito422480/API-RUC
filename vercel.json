@@ -13,7 +13,6 @@
     }
   ],
   "env": {
-    "NODE_VERSION": "20.x",
-    "MONGODB_URI": "@mongodb_uri"
+    "NODE_VERSION": "20.x"
   }
 }
